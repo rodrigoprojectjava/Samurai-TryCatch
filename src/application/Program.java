@@ -20,13 +20,17 @@ public class Program {
 		System.out.println("******METHOD 2 START******");
 		Scanner sc = new Scanner(System.in);
 		try {	
-		System.out.print("Enter some random names: ");
+		System.out.println("\n");
+		System.out.print("Digite alguns nomes aleatorios: ");
+		
 		String[] vect = sc.nextLine().split(" ");
-		int positian = sc.nextInt();
-		System.out.print(vect[positian]);
+		int posicao = sc.nextInt();
+		System.out.print(vect[posicao]);
+		System.out.println("");
 		
 		}catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Numero excedido do vector");
+			
+			System.out.println("\nNumero excedido do vector");
 			e.printStackTrace();
 		}
 		
@@ -34,7 +38,7 @@ public class Program {
 		System.out.println("Digite um número, não uma letra");
 		}
 		sc.close();
-		System.out.println("******METHOD 2 FINISH******");
+		System.out.println("\n\n******METHOD 2 FINISH******");
 	}
 
 }
